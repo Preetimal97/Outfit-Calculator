@@ -4,4 +4,6 @@ Used pandas and matplotlib to query and visualize data from the csv file.
 
 Code can be found in Hairfall.py
 
+Jupyter notebook can be found in
+
 Data can be found in PredictHairFall.csv
