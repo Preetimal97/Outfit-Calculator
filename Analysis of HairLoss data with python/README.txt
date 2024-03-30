@@ -8,6 +8,8 @@ Jupyter notebook can be found in Hairfall.ipynb
 
 Data can be found in PredictHairFall.csv
 
+Screenshots can be found in Screenshots.pdf
+
 
 
 
