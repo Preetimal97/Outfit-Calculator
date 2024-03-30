@@ -2,4 +2,6 @@ All data used from https://www.kaggle.com/datasets/amitvkulkarni/hair-health for
 
 Used pandas and matplotlib to query and visualize data from the csv file.
 
+Code can be found in Hairfall.py
+
 Data can be found in PredictHairFall.csv
