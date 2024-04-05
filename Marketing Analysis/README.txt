@@ -6,7 +6,7 @@ Jupyter notebook and full analysis can be found in MarketingAnalysis.ipynb
 
 Code can be found in MarketingAnalysis.py
 
-Data can be found in PredictHairFall.csv
+Data can be found in superstore_data.csv
 
 
 
