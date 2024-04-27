@@ -1,1 +1,10 @@
+All data used from https://www.kaggle.com/datasets/tawfikelmetwally/advertising-dataset
+
+Used Python to create a predictive sales model from different advertising investment strategies.
+
+Jupyter notebook and full explanation of creating the predictive model can be found in AdvertisingData.ipynb
+
+Executable code can be found in AdvertisingData.py
+
+Data can be found in Advertising.csv
 
