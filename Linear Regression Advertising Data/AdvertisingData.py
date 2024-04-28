@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[33]:
+# In[3]:
 
 
 import sklearn
@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 
 # ### Load Data from CSV file
 
-# In[3]:
+# In[4]:
 
 
 df = pd.read_csv(r"C:\Users\preet\Documents\AdvertisingData\Advertising.csv")
@@ -39,7 +39,7 @@ df.shape
 
 # ### Created scatter plot comparing TV Advertising Investment to Sales 
 
-# In[68]:
+# In[5]:
 
 
 sns.scatterplot(data=df, x="TV", y="Sales")
@@ -48,16 +48,16 @@ x = df["TV"]
 y = df["Sales"]
 slope, intercept, rvalue, pvalue, stderr = stats.linregress(x, y)
 plt.plot(x,slope*x+intercept)
-point_to_annotate = (10, 8)  # Replace with your actual data point coordinates
-annotation_text = "Radio: for about every 10 dollars investment you get about 8 dollars in sales"  # Corrected text for clarity
-plt.annotate(annotation_text, xy=point_to_annotate, xytext=(10, -70),  # Adjust text position
-             textcoords="offset points", fontsize=15,  # Set font size for better visibility
-             arrowprops=dict(facecolor='red', shrink=0.05))  # Customize arrow
+point_to_annotate = (10, 8)  
+annotation_text = "Radio: for about every 10 dollars investment you get about 8 dollars in sales"  
+plt.annotate(annotation_text, xy=point_to_annotate, xytext=(10, -70),  
+             textcoords="offset points", fontsize=15,  
+             arrowprops=dict(facecolor='red', shrink=0.05))  
 
 
 # ### Created scatter plot comparing Newspaper Advertising Investment to Sales 
 
-# In[61]:
+# In[6]:
 
 
 sns.scatterplot(data=df, x="Radio", y="Sales")
@@ -66,11 +66,11 @@ x = df["Radio"]
 y = df["Sales"]
 slope, intercept, rvalue, pvalue, stderr = stats.linregress(x, y)
 plt.plot(x,slope*x+intercept)
-point_to_annotate = (10, 11)  # Replace with your actual data point coordinates
-annotation_text = "Radio: for about every 10 dollars investment you get about 10 dollars in sales"  # Corrected text for clarity
-plt.annotate(annotation_text, xy=point_to_annotate, xytext=(10, -80),  # Adjust text position
-             textcoords="offset points", fontsize=15,  # Set font size for better visibility
-             arrowprops=dict(facecolor='red', shrink=0.05))  # Customize arrow
+point_to_annotate = (10, 11)  
+annotation_text = "Radio: for about every 10 dollars investment you get about 10 dollars in sales"  
+plt.annotate(annotation_text, xy=point_to_annotate, xytext=(10, -80),  
+             textcoords="offset points", fontsize=15,  
+             arrowprops=dict(facecolor='red', shrink=0.05))  
 
 
 # ### No Linear Model can fit this data so Newspaper advertisement investment will not be used in linear model
@@ -88,19 +88,19 @@ plt.plot(x,slope*x+intercept)
 
 # ### Creating the predictive linear model
 
-# In[70]:
+# In[9]:
 
 
 reg = LinearRegression()
 
 
-# In[71]:
+# In[10]:
 
 
 reg.fit(df[['TV','Radio']], df.Sales)
 
 
-# In[73]:
+# In[11]:
 
 
 reg.predict([[230,38]])
@@ -120,10 +120,10 @@ df.head(89)
 display(df.iloc[88])
 
 
-# In[76]:
+# In[14]:
 
 
-reg.predict([[88.3,25.5]])
+reg.predict([[76,27]])
 
 
 # ### I got 11.755 in sales from my model which is pretty close to the original data where sales was 12.9
