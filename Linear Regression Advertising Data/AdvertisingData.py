@@ -120,10 +120,10 @@ df.head(89)
 display(df.iloc[88])
 
 
-# In[14]:
+# In[15]:
 
 
-reg.predict([[76,27]])
+reg.predict([[88.3,25.5]])
 
 
 # ### I got 11.755 in sales from my model which is pretty close to the original data where sales was 12.9
