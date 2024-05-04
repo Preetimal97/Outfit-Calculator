@@ -1,1 +1,8 @@
+All data used from https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download
+
+Used Machine Learning to train a model to identify fraud.
+
+Jupyter notebook and full explanation of creating the predictive model can be found in CreditFraud.ipynb
+
+Executable code can be found in CreditFraud.py
 
